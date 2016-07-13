@@ -5,7 +5,7 @@
 // @import 'font-awesome';
 @import 'box-sizing';
 
-$gutter: 1 rem;
+$gutter: 1rem;
 
 body {
   margin: 0;
@@ -27,4 +27,20 @@ body {
 .container {
   max-width: 60rem;
   margin: auto;
+}
+
+.hand {
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.value {
+  text-align: center;
+  font-size: 1.5rem;
 }
