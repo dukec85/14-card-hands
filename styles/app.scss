@@ -21,8 +21,16 @@ body {
   width: 100%;
   background: #000000;
   color: #fff;
-  padding-left: 15%;
 }
+
+.app-nav__card {
+  max-width: 60rem;
+  margin: auto;
+}
+
+// .card-hands {
+//   max-width: 70%;
+// }
 
 .container {
   max-width: 60rem;
@@ -30,14 +38,17 @@ body {
 }
 
 .hand {
+  max-width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .card-container {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
+width: calc(60rem / 5 - 1rem - 1rem);
+}
+
+.img {
+  width: 100%;
 }
 
 .value {
