@@ -14,6 +14,21 @@ export default class Hand {
   }
 
   render() {
+    this.data.cards.map((item) => {
+      const container = document.createElement('div');
+      container.classList.add('card-container');
+      container.innerHTML = `
+        <div class="card">
+          <img class="img" src="http://placekitten.com/200/300" ref "">
+        </div>
+        <div class="value"></div>`;
 
+      container.querySelector('.value').innerText = item.value;
+      container.querySelector('.img').innerHTML = item.img;
+
+      return container;
+    }).forEach((container) => {
+      this.element.appendChild(container);
+    });
   }
 }
