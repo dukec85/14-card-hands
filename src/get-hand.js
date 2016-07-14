@@ -12,7 +12,12 @@ export default class getHand {
     this.element.innerHTML = template;
 
     this.selectors = {
-      card: this.element.querySelector('.'),
-      value: this.element.querySelector('.'),
+      card: this.element.querySelector('.img'),
+      value: this.element.querySelector('.value'),
+    };
   }
+  render() {
+    this.selectors.img.innerText = this.data.img;
+    this.selectors.value.innerText = this.data.value;
+}
 }

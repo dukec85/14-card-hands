@@ -9,11 +9,11 @@ export default class App {
   constructor(element) {
     this.element = element;
   }
-    getOptions () {
-      return getOptionsData ()
+  getOptions() {
+    return getOptionsData()
         .then((data) => {
           this.data = data;
-      });
-    }
+        });
+  }
 
   }
