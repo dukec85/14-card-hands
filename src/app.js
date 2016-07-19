@@ -23,6 +23,8 @@ export default class App {
               hand.render();
             });
 
+
+
           this.element.appendChild(hand.element);
         }
       });

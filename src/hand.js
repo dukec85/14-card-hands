@@ -19,12 +19,12 @@ export default class Hand {
       container.classList.add('card-container');
       container.innerHTML = `
         <div class="card">
-          <img class="img" src="http://placekitten.com/200/300" ref "">
+          <img class="img" src="" ref "">
         </div>
         <div class="value"></div>`;
 
       container.querySelector('.value').innerText = item.value;
-      container.querySelector('.img').innerHTML = item.img;
+      container.querySelector('.img').src = item.image;
 
       return container;
     }).forEach((container) => {
