@@ -4,3 +4,55 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 @import 'box-sizing';
+
+$gutter: 1rem;
+
+body {
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app__nav {
+  width: 100%;
+  background: #000000;
+  color: #fff;
+}
+
+.app-nav__card {
+  max-width: 60rem;
+  margin: auto;
+}
+
+// .card-hands {
+//   max-width: 70%;
+// }
+
+.container {
+  max-width: 60rem;
+  margin: auto;
+  padding: 3% 0;
+}
+
+.hand {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-container {
+width: calc(60rem / 5 - 1rem - 1rem);
+}
+
+.img {
+  width: 100%;
+}
+
+.value {
+  text-align: center;
+  font-size: 1.5rem;
+}

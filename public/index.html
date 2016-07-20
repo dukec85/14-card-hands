@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>14-card-hands</title>
   <link rel="stylesheet" href="/app.css">
 </head>
+
 <body>
+
+  <div class="app">
+    <nav class="app__nav">
+      <div class="app-nav__card">
+        <h2 class="card-hands">Card Hands</h2>
+      </div>
+    </nav>
+
+    <main class="app__main">
+      <div class="container">
+
+      </div>
+
+    </main>
+
+  </div>
 
   <script src="/vendor.js" charset="utf-8"></script>
   <script src="/app.js" charset="utf-8"></script>
 
   <script type="text/javascript">
+    var App = require('app');
+    var appEl = document.querySelector('.container');
+
+    var appyMcAppface = new App(appEl);
+    appyMcAppface.start()
   </script>
 </body>
+
 </html>
